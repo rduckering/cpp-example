@@ -15,8 +15,9 @@ public:
     void process (float* audioStream, int numSamples);
     static std::string info() { return "GuitarPitchDetection"; }
 
-    void setSampleRate (float sr) noexcept { sampleRate = sr; }
     float getPitch() const noexcept { return pitch.load (std::memory_order::memory_order_relaxed); }
+
+    void setSampleRate (float sr) noexcept { sampleRate = sr; }
     void setThreshold (float value) { threshold = juce::jlimit (0.0f, 1.0f, value); }
 
 private:

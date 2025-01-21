@@ -4,7 +4,6 @@
 RBJFilter_base::RBJFilter_base()
 {
     freqc = 0.0f;
-    freqs = 0.0f;
     q     = 0.0f;
     norm  = 0.0f;
 
@@ -25,7 +24,6 @@ RBJFilter_base::~RBJFilter_base() {}
 LPF::LPF()
 {
     freqc = 0.0f;
-    freqs = 0.0f;
     q  = 0.0f;
     norm = 0.0f;
 
@@ -85,7 +83,6 @@ void LPF::process (float& input)
 HPF::HPF()
 {
     freqc = 0.0f;
-    freqs = 0.0f;
     q     = 0.0f;
     norm  = 0.0f;
 
@@ -147,7 +144,6 @@ void HPF::process (float& input)
 Peak::Peak()
 {
     freqc = 0.0f;
-    freqs = 0.0f;
     q  = 0.0f;
     norm = 0.0f;
 
@@ -210,7 +206,6 @@ void Peak::process (float& input)
 BPF::BPF()
 {
     freqc = 0.0f;
-    freqs = 0.0f;
     q     = 0.0f;
     norm  = 0.0f;
 
@@ -275,7 +270,6 @@ void BPF::process (float& input)
 BPFcQ::BPFcQ()
 {
     freqc = 0.0f;
-    freqs = 0.0f;
     q     = 0.0f;
     norm  = 0.0f;
 
@@ -339,7 +333,6 @@ void BPFcQ::process (float& input)
 Notch::Notch()
 {
     freqc = 0.0f;
-    freqs = 0.0f;
     q     = 0.0f;
     norm  = 0.0f;
 
@@ -402,7 +395,6 @@ void Notch::process (float& input)
 APF::APF()
 {
     freqc = 0.0f;
-    freqs = 0.0f;
     q     = 0.0f;
     norm  = 0.0f;
 
@@ -468,7 +460,6 @@ void APF::process (float& input)
 LowShelf::LowShelf()
 {
     freqc = 0.0f;
-    freqs = 0.0f;
     q     = 0.0f;
     norm  = 0.0f;
 
@@ -535,7 +526,6 @@ void LowShelf::process (float& input)
 HighShelf::HighShelf()
 {
     freqc = 0.0f;
-    freqs = 0.0f;
     q     = 0.0f;
     norm  = 0.0f;
 

@@ -6,7 +6,7 @@
 // to a json file. With the addition of an external json parsing library to speed up parsing of json/improving
 // handling json like objects with the project. Options USE_SIMD_JSON in cmake to change between the two.
 
-// this could also be put in to JUCE xml settings file that is output to applicationSupport, but just an example of doing it without JUCE.
+// this could also be put in to JUCE xml settings file that is output to applicationSupport;
 
 // file handling only intended for Mac and Windows
 
@@ -29,7 +29,6 @@ public:
     void setTuningOffset (float value) noexcept { pluginTree.setProperty (juce::Identifier (SettingIds::tuningOffsetId), value, nullptr); }
     void setTuningMode (int value) noexcept { pluginTree.setProperty (juce::Identifier (SettingIds::tuningModeId), value, nullptr);  }
     void setSensitivityLevel (float value) noexcept { pluginTree.setProperty (juce::Identifier (SettingIds::sensitivityLevelId), value, nullptr);  }
-
 
     juce::ValueTree& getStateValueTrees() noexcept { return pluginTree; }
 

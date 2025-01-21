@@ -24,9 +24,8 @@ public:
     virtual void   calculateCoeffs (float fc, float fs, int order) = 0;
     virtual void  process (float& input) = 0;
 
-    float freqc;
-    float freqs;
-    float q;
+    float freqc = 100.0f;
+    float q = 0.707f;
 
     float norm;
     float coeffs[NUMCOEFFS];
